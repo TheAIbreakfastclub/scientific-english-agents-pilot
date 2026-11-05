@@ -1,0 +1,25 @@
+{
+  "owner": {
+    "name": "Guillaume Massol",
+    "url": "https://github.com/TheAIbreakfastclub"
+  },
+  "metadata": {
+    "description": "Scientific English Agents -- competency-based AI agents for academic and scientific English in higher education (CEFR B1-C2, IMRAD, peer review, APC).",
+    "version": "3.0.0"
+  },
+  "plugins": [
+    {
+      "name": "scientific-english-agents",
+      "source": "./",
+      "description": "Competency-based AI coaching for scientific/academic English: abstracts, IMRAD sections, lab reports, peer review, presentations, vocabulary, grammar, and CEFR-aligned assessment (APC). Includes an orchestrator skill (scientific-english-agents) plus 6 specialist skills, one per agent (writing-coach, critical-reviewer, lexical-expert, communication-coach, language-tutor, assessment), so a single agent can be activated on its own.",
+      "version": "3.0.0",
+      "author": {
+        "name": "Guillaume Massol",
+        "url": "https://github.com/TheAIbreakfastclub"
+      },
+      "homepage": "https://github.com/TheAIbreakfastclub/scientific_english_agents-public",
+      "repository": "https://github.com/TheAIbreakfastclub/scientific_english_agents-public",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

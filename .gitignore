@@ -1,0 +1,54 @@
+# ─── Environment & Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Generated Outputs (build/) ───────────────────────────────────────────────
+build/feedback/
+build/trackers/
+build/exports/
+# Keep the directory itself
+!build/.gitkeep
+
+# ─── Student Data (never version — RGPD/GDPR) ────────────────────────────────
+students/
+data/students/
+**/student-*.md
+**/tracker-*.md
+# Exception: the anonymised example in examples/
+!examples/student-profile-sample.md
+
+# ─── Claude Code internals ────────────────────────────────────────────────────
+.claude/
+*.claude-session
+
+# ─── OS & Editor ──────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Node (if tooling added later) ────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ─── Python (if scripts added later) ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

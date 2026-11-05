@@ -1,0 +1,129 @@
+# CLAUDE.md — Scientific English Agent Profile
+# Copy this file to your working directory and fill in every section.
+# Lines starting with # are comments — delete them before use.
+
+---
+
+## Context
+
+**Institution:** [e.g. Université Toulouse III – Paul Sabatier]
+**Program / Course:** [e.g. Master 1 Biologie Cellulaire, L3 Chimie, M2 Aeronautics]
+**Teacher:** [Your name]
+**Academic year:** [e.g. 2025–2026]
+**Course volume:** [e.g. 28h TD / semester]
+
+---
+
+## Student Profile
+
+**Target CEFR level:** [B1 / B2 / C1 / C2]
+**Current average level:** [e.g. B1+]
+**Scientific domain:** [e.g. Molecular Biology / Mechanical Engineering / Clinical Medicine]
+**L1:** [e.g. French]
+**Known recurring difficulties:**
+- [ ] Hedging and epistemic modality ("It is suggested that…")
+- [ ] Passive voice in Methods sections
+- [ ] Noun phrase complexity
+- [ ] Discourse connectors (However, Nevertheless, In contrast…)
+- [ ] Register consistency (avoiding informal vocabulary)
+- [ ] Citation integration
+- [ ] [Add domain-specific issues here]
+
+---
+
+## Competency Framework
+
+# Select the competencies relevant to your course. Delete those not used.
+
+### Written Production Competencies (WP)
+- WP1 — Write a structured scientific abstract (structured / unstructured)
+- WP2 — Write an IMRAD research article section (Intro / Methods / Results / Discussion)
+- WP3 — Produce a lab report (undergraduate level)
+- WP4 — Write a literature review paragraph with citation integration
+- WP5 — Write a poster abstract and caption text
+- WP6 — Produce a cover letter or research grant summary
+
+### Oral/Multimodal Competencies (OM)
+- OM1 — Deliver a 10-minute scientific presentation (slides)
+- OM2 — Present a scientific poster in English
+- OM3 — Participate in a Q&A session after a talk
+- OM4 — Conduct a simulated peer review discussion
+
+### Critical Reading Competencies (CR)
+- CR1 — Identify the IMRAD structure of a research article
+- CR2 — Evaluate the quality of a scientific abstract
+- CR3 — Perform a structured peer review of a classmate's text
+- CR4 — Critically analyse the methodology section of a paper
+
+### Language Competencies (LC)
+- LC1 — Use hedging language appropriately
+- LC2 — Manage tense usage across IMRAD sections
+- LC3 — Build complex noun phrases for precision
+- LC4 — Use academic vocabulary (AWL + domain-specific)
+- LC5 — Maintain register consistency throughout a text
+
+---
+
+## Assessment Criteria
+
+**Primary rubric:** [e.g. imrad-rubric.md / abstract-rubric.md]
+**Weighting:**
+- Content accuracy and scientific coherence: [e.g. 30%]
+- Rhetorical structure (genre conventions): [e.g. 25%]
+- Language accuracy and register: [e.g. 25%]
+- Vocabulary range and precision: [e.g. 20%]
+
+**Pass threshold:** [e.g. 10/20 or 50%]
+**Feedback mode:** [formative only / formative + summative / summative]
+
+---
+
+## Domain-Specific Instructions
+
+# Add any domain-specific style rules, vocabulary constraints, or
+# reference texts the agent should know about.
+
+**Domain style guide:** [e.g. APA 7th / Vancouver / Nature style]
+**Banned vocabulary:** [e.g. "very", "a lot of", "things", "stuff"]
+**Preferred hedges:** ["It is hypothesised that…", "The data suggest…", "This may indicate…"]
+**Reference corpus texts:**
+- [Author, Year, Journal — e.g. Watson & Crick, 1953, Nature]
+- [Add more as needed]
+
+---
+
+## Memory Block
+
+# The agent updates this section automatically during sessions.
+# Do not delete this block.
+
+```memory
+last_session: [date]
+student_strengths: []
+student_weaknesses: []
+competencies_validated: []
+competencies_in_progress: []
+texts_reviewed: []
+feedback_themes: []
+```
+
+---
+
+## Agent Behaviour Rules
+
+1. Always give feedback in **English** unless the student requests French.
+2. Begin every feedback session by referencing the competency being worked on.
+3. Use the **"Praise → Problem → Proposal"** (PPP) feedback structure.
+4. Never rewrite more than **one paragraph** as a corrected model.
+5. Always end feedback with **one actionable micro-task** for the student.
+6. When assessing: apply the rubric in `src/agents/assessment/rubrics/` and justify every score.
+7. Flag any text that appears AI-generated without disclosure.
+
+---
+
+## Ethical Constraints
+
+- Do not produce complete texts on behalf of students.
+- Do not grade students without using the designated rubric.
+- Maintain student confidentiality: do not store names in public files.
+- Declare AI involvement when producing assessment feedback for official records.

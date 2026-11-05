@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: scientific-english-agents
+abstract: Competency-based AI pedagogical agents for scientific English in higher education
+authors:
+  - family-names: Massol
+    given-names: Guillaume
+    affiliation: "Universite Toulouse III - Paul Sabatier"
+license: CC-BY-4.0
+repository-code: "https://github.com/TheAIbreakfastclub/scientific_english_agents-public"
+type: software
+version: 3.0.0
+date-released: 2025-06-14
+keywords:
+  - scientific-english
+  - higher-education
+  - AI-pedagogy
+  - CEFR
+  - competency-based-learning

@@ -1,0 +1,67 @@
+<svg width="1100" height="520" viewBox="0 0 1100 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture diagram">
+  <defs>
+    <style>
+      .box { fill:#F4F1EA; stroke:#9C6B4A; stroke-width:2; rx:8; }
+      .shared { fill:#E8E0D0; stroke:#C08552; stroke-width:2; }
+      .lbl { font-family:'DM Mono', monospace; font-size:15px; fill:#2B2620; }
+      .lblsm { font-family:'DM Mono', monospace; font-size:12px; fill:#5A5043; }
+      .head { font-family:'Playfair Display', Georgia, serif; font-size:18px; font-weight:700; fill:#9C6B4A; }
+      .flow { stroke:#9C6B4A; stroke-width:1.5; fill:none; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#9C6B4A"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="520" fill="#FBF9F4"/>
+
+  <!-- entry -->
+  <rect class="box" x="40" y="40" width="200" height="64" rx="8"/>
+  <text class="head" x="60" y="68">.env</text>
+  <text class="lblsm" x="60" y="90">PROVIDER=anthropic|mistral</text>
+
+  <!-- router -->
+  <rect class="box" x="40" y="160" width="200" height="64" rx="8"/>
+  <text class="head" x="60" y="188">SKILL.md</text>
+  <text class="lblsm" x="60" y="210">keyword router</text>
+
+  <line class="flow" x1="140" y1="104" x2="140" y2="158"/>
+
+  <!-- agents column -->
+  <text class="head" x="360" y="32">src/agents/</text>
+  <g>
+    <rect class="box" x="360" y="48"  width="220" height="40" rx="6"/><text class="lbl" x="376" y="73">writing-coach</text>
+    <rect class="box" x="360" y="98"  width="220" height="40" rx="6"/><text class="lbl" x="376" y="123">critical-reviewer</text>
+    <rect class="box" x="360" y="148" width="220" height="40" rx="6"/><text class="lbl" x="376" y="173">lexical-expert</text>
+    <rect class="box" x="360" y="198" width="220" height="40" rx="6"/><text class="lbl" x="376" y="223">communication-coach</text>
+    <rect class="box" x="360" y="248" width="220" height="40" rx="6"/><text class="lbl" x="376" y="273">language-tutor</text>
+    <rect class="box" x="360" y="298" width="220" height="40" rx="6"/><text class="lbl" x="376" y="323">assessment + rubrics</text>
+  </g>
+
+  <line class="flow" x1="240" y1="192" x2="356" y2="120"/>
+  <line class="flow" x1="240" y1="192" x2="356" y2="218"/>
+  <line class="flow" x1="240" y1="192" x2="356" y2="318"/>
+
+  <!-- shared column -->
+  <text class="head" x="700" y="32">src/shared/</text>
+  <text class="lblsm" x="700" y="50">single source of truth — no duplication</text>
+  <g>
+    <rect class="shared" x="700" y="64"  width="240" height="40" rx="6"/><text class="lbl" x="716" y="89">feedback-protocol</text>
+    <rect class="shared" x="700" y="114" width="240" height="40" rx="6"/><text class="lbl" x="716" y="139">error-taxonomy</text>
+    <rect class="shared" x="700" y="164" width="240" height="40" rx="6"/><text class="lbl" x="716" y="189">cefr-descriptors</text>
+    <rect class="shared" x="700" y="214" width="240" height="40" rx="6"/><text class="lbl" x="716" y="239">academic-word-list</text>
+  </g>
+
+  <line class="flow" x1="580" y1="118" x2="696" y2="84"/>
+  <line class="flow" x1="580" y1="268" x2="696" y2="134"/>
+  <line class="flow" x1="580" y1="168" x2="696" y2="184"/>
+  <line class="flow" x1="580" y1="318" x2="696" y2="234"/>
+
+  <!-- output -->
+  <rect class="box" x="360" y="400" width="580" height="80" rx="8"/>
+  <text class="head" x="380" y="430">PPP feedback discussed live in chat -> CLAUDE.md memory block updated</text>
+  <text class="lblsm" x="380" y="456">Praise → Problem → Proposal · 1 micro-task per session</text>
+
+  <line class="flow" x1="470" y1="338" x2="470" y2="398"/>
+  <line class="flow" x1="820" y1="254" x2="700" y2="398"/>
+</svg>

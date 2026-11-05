@@ -1,0 +1,12 @@
+{
+  "name": "scientific-english-agents",
+  "description": "Competency-based AI coaching for scientific/academic English in higher education: abstracts, IMRAD, peer review, presentations, vocabulary, grammar, CEFR-aligned assessment (APC).",
+  "version": "3.0.0",
+  "author": {
+    "name": "Guillaume Massol",
+    "url": "https://github.com/TheAIbreakfastclub"
+  },
+  "homepage": "https://github.com/TheAIbreakfastclub/scientific_english_agents-public",
+  "repository": "https://github.com/TheAIbreakfastclub/scientific_english_agents-public",
+  "license": "CC-BY-4.0"
+}
