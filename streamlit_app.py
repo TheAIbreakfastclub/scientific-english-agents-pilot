@@ -27,7 +27,7 @@ from core import (
     missing_source_files,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 MAX_REQUESTS = 15  # session-level allowance, NOT a global account spending cap
 
 st.set_page_config(
