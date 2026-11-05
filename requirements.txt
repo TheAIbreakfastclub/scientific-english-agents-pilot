@@ -1,0 +1,2 @@
+# Isolated requirements for pilot/streamlit_app.py. Existing root requirements stay unchanged.
+streamlit>=1.45,<2
